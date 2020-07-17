@@ -350,7 +350,7 @@ function getHTML(data){
     for (x in data){
       console.log(`<div id="artist">`)
       console.log(`<div class="image">`)
-      console.log(` <img src="${data[x].wikipedia}"/>`)
+      console.log(` <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/starry-night-by-vincent-van-gogh-vincent-van-gogh.jpg"/>`)
       console.log(`</div>`)
       console.log(`<div class = "name">`)
       console.log(` <a href="${data[x].wikipedia}"> ${data[x].name}</a>`)
