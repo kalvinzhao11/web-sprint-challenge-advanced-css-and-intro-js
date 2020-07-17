@@ -207,8 +207,8 @@ const artists = [
 
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
-console.log(artists[0].name);
-console.log(artists[2].bio);
+console.log(artists[0].name)
+console.log(artists[2].bio)
 
 
 
@@ -305,11 +305,19 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
+function lotsOfArt(array){
 
   /* Code here */
+  experiencedPainter = []
+  for (x in array){
+    if (array[x].paintings > 100){
+      experiencedPainter.push(array[x].name)
+    }
+  }
+  return experiencedPainter
 
 }
+console.log(lotsOfArt(artists))
 
 
 
