@@ -268,13 +268,11 @@ function removeArtist(array, index) {
     /* code here */
     if (index < array.length){
       array.splice(index, 1)
-      console.log("hi")
-    } else {
-
     }
     console.log(array.length)
+    return array
   }
-removeArtist(artists, 17)
+console.log(removeArtist(artists, 0))
  
 
 /**
