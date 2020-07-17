@@ -378,3 +378,14 @@ console.log(randomize([1, 2, 3, 4, 5, 6, 7,8 ,9 ,10]))
 
 
  /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
+ function filterLotsOfArt(array){
+
+  /* Code here */
+  const filterArtist = array.filter(array => array.paintings > 100);
+  let finalName = []
+  for (x in filterArtist) {
+    finalName.push(filterArtist[x].name)
+  }
+  return finalName
+}
+console.log(filterLotsOfArt(artists))
